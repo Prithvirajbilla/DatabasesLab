@@ -1,0 +1,16 @@
+link1 anmi 28 statuscode: 200
+link2 anmi 34 statuscode: 200
+link1 dnmi 2 statuscode: 200
+link2 dnmi 6 statuscode: 200
+link1 anmr 1 statuscode: 200
+link2 anmr 5 statuscode: 200
+link1 dnmr 2 statuscode: 200
+link2 dnmr 5 statuscode: 200
+link1 cnmi 1 statuscode: 200
+link2 cnmi 4 statuscode: 200
+link1 cnmr 2 statuscode: 200
+link2 cnmr 5 statuscode: 200
+
+## link1 is the part you dirctly write to database
+## link2 is the part where you write to a textfile (dump file)
+## later after fixed time we write it to database

@@ -1,0 +1,106 @@
+### Name ####
+Prithviraj Billa
+
+### Roll No ####
+110050065
+
+### Folders Structure ####
+
+lab31/
+	- WEB-INF/
+		-classes/
+			- First.java
+			- movieQuery.java
+			- movieinfo.csv
+			- movieratings.csv
+		- web.xml
+
+url : http://localhost:9999/lab31/First
+
+lab32/
+	-WEB-INF/
+		-classes/
+			- First.java
+			- movieQuery.java
+			- movieinfo.csv
+			- movieratings.csv
+		- web.xml
+
+Testing.java
+test.java
+
+url : http://localhost:9999/lab32/First
+
+
+lab31 is the first part of the app
+
+in lab31 :
+	the changes are written to the databases immediatedly.
+
+lab32 is the second part of the app
+
+in lab32 :
+	the changes to the database are written to the buffer.txt file (dump file)
+	and the buffer.txt file is read at fixed rate and the changes are written 
+	to the database after 10 sec.
+
+in both lab31/WEB-INF/classes/movieQuery.java
+and also lab32/WEB-INF/classes/movieQuery.java
+
+change the member variable in the classes.
+ movieRating => absolute path of the  movieratings.csv file 
+ movieInfo => absolute path of the movieinfo.csv file
+
+
+### How to run #####
+ run ./startup.sh
+java First.java
+
+### UI ####
+
+to remove the movie info of the movie
+
+submit movietitle, and click dnmi button
+
+to add new movie info 
+
+submit movietitle:director:year:genre:actors and click anmi button
+
+to change movie info
+
+submit movietitle:director:year:genre:actors and click cnmi button
+
+similarly for movie ratings
+
+## How to generate  log files ###
+
+javac Testing.java
+javac test.java
+java test
+
+
+##### LOGS for the both parts ######
+
+
+link1 anmi 28 statuscode: 200
+link2 anmi 34 statuscode: 200
+link1 dnmi 2 statuscode: 200
+link2 dnmi 6 statuscode: 200
+link1 anmr 1 statuscode: 200
+link2 anmr 5 statuscode: 200
+link1 dnmr 2 statuscode: 200
+link2 dnmr 5 statuscode: 200
+link1 cnmi 1 statuscode: 200
+link2 cnmi 4 statuscode: 200
+link1 cnmr 2 statuscode: 200
+link2 cnmr 5 statuscode: 200
+
+## link1 is the part you dirctly write to database
+## link2 is the part where you write to a textfile (dump file)
+## later after fixed time we write it to database
+
+
+In my assignment,
+The time taken by the the model1 writing directly to the database is taking much less time compared
+to dumping in to other file and reading it later on.
+
