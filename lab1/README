@@ -1,0 +1,20 @@
+#### Name #####
+Prithviraj M Billa
+
+
+### ROLL NO ####
+110050065
+
+### Files #####
+movieDb.java
+
+Contains the main function which queries the movies database structure
+
+Contains static members HashMaps which hashes repectives keys with Values
+
+### To Run ####
+
+javac movieDb.java
+
+java movieDb
+
