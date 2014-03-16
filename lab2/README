@@ -1,0 +1,33 @@
+###NAME #####
+Prithviraj M Billa
+
+### roll nO ####
+110050065
+
+##how to compile ###
+
+javac First.java --path(specified path)
+
+## NOTE ###
+
+In movieQuery.java file, edit the 
+
+static members String moveinfo
+String movieRatings 
+
+to the absolute path of the filenames
+
+## there is only one text box on the web page
+
+## submit through  desired button to get the desired info
+
+getDirec to get Director
+
+getActor to get movies of the Actors
+
+getMovie for the best movie
+
+URL
+(I did the assignment in my own laptop)
+http://localhost:9999/lab2/First
+
